@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LPU 360 Virtual Tour - Lovely Professional University</title>
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    #tour-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    #tour {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+    .top-bar {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      pointer-events: none;
+      z-index: 10;
+    }
+    .badge {
+      pointer-events: auto;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      padding: 8px 14px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      background-color: #f97316;
+      border-radius: 50%;
+      box-shadow: 0 0 8px #f97316;
+    }
+    .action-btn {
+      pointer-events: auto;
+      background: #f97316;
+      color: white;
+      text-decoration: none;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+    .action-btn:hover {
+      background: #ea580c;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <div id="tour-container">
+    <div class="top-bar">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>LPU 360° Virtual Campus Tour</span>
+      </div>
+      <a href="/student/dashboard" class="action-btn">
+        <span>← Back to Student RMS</span>
+      </a>
+    </div>
+
+    <iframe
+      id="tour"
+      src="https://iviewd.com/lpu2/"
+      title="LPU 360 Virtual Tour"
+      allow="fullscreen; xr-spatial-tracking"
+      allowfullscreen>
+    </iframe>
+  </div>
+</body>
+</html>

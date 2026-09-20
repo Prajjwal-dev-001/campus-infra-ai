@@ -1,0 +1,26 @@
+{
+  "name": "lpu-rms-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.19",
+    "axios": "^1.7.2",
+    "framer-motion": "^11.2.12",
+    "jspdf": "^4.2.1",
+    "lucide-react": "^0.400.0",
+    "next": "14.2.5",
+    "postcss": "^8.4.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.4",
+    "typescript": "^5.4.5",
+    "zustand": "^4.5.4"
+  }
+}
